@@ -1,0 +1,234 @@
+:root{
+    --primary: #ddd;
+    --dark: rgb(36, 33, 33);
+    --light: #fff;
+    --purple: #5D3FD3;
+    --red: #de3e62;
+    --blue: #27a9ff;
+    --dark-blue: #367bb6;
+    --shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+html{
+    box-sizing: border-box;
+    color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: var(--dark);
+    padding: 0%;
+    margin: 0%;
+}
+.container{
+    /* background: var(--primary); */
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+header{
+    background-color: var(--purple);
+}
+.header-main{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0.5rem 2rem;
+    grid-gap: 4rem;
+    justify-items: center;
+}
+nav .date{
+    text-align: right;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style-type: none;
+}
+nav ul li{
+    padding: 0.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--dark);
+}
+nav ul li a:hover{
+    color: var(--light);
+}
+section{
+    background: var(--purple);
+}
+.section-other-nav{
+    background: var(--dark-blue);
+    padding: 2rem 0 0 0;
+}
+.section-main{
+    /* background-color: tomato; */
+    text-align: center;
+    padding: 0 0 2rem 0;
+    width: 70%;
+    margin: 0 auto;
+}
+.section-main h1{
+    margin-top: 0;
+}
+.btn{
+    /* background: var(--dark); */
+    color: var(--light);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: var(--light);
+    color: var(--blue);
+    box-shadow: var(--shadow);
+}
+.main-home{
+    /* background: var(--purple); */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.box-img{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 50%;
+}
+img:hover{
+    opacity: 100%;
+    box-shadow: var(--shadow);
+}
+footer{
+    background: var(--purple);
+}
+.footer-nav{
+    /* background-color: var(--dark); */
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.main-speaker{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 2rem;
+    justify-self: center;
+    width: 70%;
+}
+.speaker{
+    /* background: teal; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-self: center;
+    padding: 2rem;
+}
+.info .speaker-name, .talk-name{
+    color: var(--blue);
+    margin-top: 0;
+}
+.profile{
+    /* background: green; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.profile a{
+    color: var(--light);
+    text-decoration: none;
+    padding: 0.2rem;
+}
+.profile a:hover{
+    color: var(--red);
+    text-decoration: none;
+    padding: 0.2rem;
+}
+.profile-img{
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+/* schedule */
+.main-schedule{
+    display: grid;
+    justify-items: center;
+    width: 50%;
+    justify-self: center;
+}
+.schedule{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    padding: 2rem 0;
+}
+.list{
+    display: flex;
+    gap: 2rem;
+}
+.schedule h2{
+    color: var(--blue);
+}
+/* venue */
+.main-venue{
+    /* background: var(--primary); */
+    color: var(--light);
+    padding: 2rem;
+    justify-self: center;
+    width: 70%;
+}
+.venue{
+    /* background: teal; */
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.location{
+    padding: 1rem;
+}
+.map{
+    padding: 1rem;
+}
+.venue h1{
+    color: var(--red);
+}
+.venue a{
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+.venue a:hover{
+    color: var(--blue);
+}
+.register{
+    /* background: var(--primary); */
+    color: var(--light);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    justify-items: end;
+}
+.description{
+    /* background: tomato; */
+    width: 70%;
+    padding: 2rem;
+}
+.register h1, label{
+    color: var(--blue);
+}
+.register div{
+    padding: 1rem;
+}
+.register input, optgroup, select, textarea{
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+}
+.form{
+    /* background: skyblue; */
+    width: 70%;
+    padding: 2rem;
+    align-self: center;
+}
